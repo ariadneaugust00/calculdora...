@@ -1,4 +1,4 @@
-# <!DOCTYPE html>
+<oiiiiii>
 <html>
 <head>
     <title>Calculadora com Alert</title>
@@ -9,15 +9,16 @@
 
 <script>
 function calcular() {
-    let n1 = Number(prompt(@"Que começem os jogos, escolha o primeiro número:"));
-    let n2 = Number(prompt(@"escolha o segundo:"));
+
+    let n1 = Number(prompt("Que comecem os jogos! Escolha o primeiro número:"));
+    let n2 = Number(prompt("Escolha o segundo número:"));
 
     let op = prompt(
-        "Escolha o números que deseja operacioar:\n" +
+        "Escolha a operação:\n" +
         "+ para somar\n" +
         "- para subtrair\n" +
         "* para multiplicar\n" +
-        "/para dividir" 
+        "/ para dividir"
     );
 
     let resultado;
@@ -30,7 +31,7 @@ function calcular() {
         resultado = n1 * n2;
     } else if (op == "/") {
         if (n2 == 0) {
-            alert("Erro: não é possivel dividir por 0");
+            alert("Erro: não é possível dividir por 0.");
             return;
         }
         resultado = n1 / n2;
@@ -39,7 +40,7 @@ function calcular() {
         return;
     }
 
-    alert("o resultado é : " + resultado);
+    alert("O resultado é: " + resultado);
 }
 </script>
 
